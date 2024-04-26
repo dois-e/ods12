@@ -1,0 +1,48 @@
+
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: flex;/*alinhando lado a lado*/
+    flex-wrap: wrap;/*Se os itens não couberem mais em uma linha, eles 
+    irão quebrar para a próxima linha, mantendo o layout flexível.*/
+    justify-content: space-evenly;/*para distribuir o espaço restante 
+    entre os itens flexíveis de maneira uniforme, incluindo espaços
+     iguais tanto entre os itens quanto nas extremidades do contêiner.*/
+    gap: 6vw;/*da espaçamento entre as linhas e colunas das imagens*/
+     margin-top: 30px;
+}
+
+.gallery-items {
+    width: 300px;/*largura*/
+    height: 250px;/*altura*/
+    border-radius: 100px;
+    flex-grow: 1;/*preenche espaço ao dimensionar a página*/
+   transition: 0.5s;/*transição efeito  quando passa por cima da img*/
+   border-radius: 20px;
+}
+
+.gallery-items img {
+    width: 100%;/*largura*/
+    height: 100%;/* Altura*/
+    object-fit: cover;/* deve ser dimensionado e posicionado 
+    dentro de seu contêiner, mantendo sua proporção original
+     e cobrindo todo o espaço disponível, sem distorções.*/
+     border-radius: 10px;
+   
+
+}
+
+.gallery-items:hover{
+    transform: scale(2.0);/*ao passar mouse a imagem  se torna maior*/
+    filter: drop-shadow(4px 4px 4px #000000 );
+    width: 300px;
+    height: 200px;
+
+}
+
